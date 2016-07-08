@@ -1,0 +1,5 @@
+dspsr (0+git20160708-1) xenial; urgency=medium
+
+  * Initial release (Closes: #nnnn)
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Fri, 08 Jul 2016 13:23:26 +0000
