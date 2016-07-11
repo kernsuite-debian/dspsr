@@ -15,7 +15,11 @@
 
 
 %:
-	dh $@ 
+	dh $@ --with autoreconf --parallel
+
+override_dh_autoreconf:
+	./bootstrap
+
 
 
 # dh_make generated override targets
