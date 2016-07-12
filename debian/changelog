@@ -1,3 +1,9 @@
+dspsr (0+git20160608-1kern1) xenial; urgency=medium
+
+  * add missing dh-autoreconf dependency
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 12 Jul 2016 12:28:59 +0000
+
 dspsr (0+git20160608-1) xenial; urgency=medium
 
   * Initial release (Closes: #nnnn) 
