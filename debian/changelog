@@ -1,3 +1,9 @@
+dspsr (0+git20161021-1) xenial; urgency=medium
+
+  * sync with upstream
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Fri, 04 Nov 2016 13:51:20 +0100
+
 dspsr (0+git20160608-1kern2) xenial; urgency=medium
 
   * don't install all include files
