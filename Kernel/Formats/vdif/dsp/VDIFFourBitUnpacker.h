@@ -1,27 +1,25 @@
 //-*-C++-*-
 /***************************************************************************
  *
- *   Copyright (C) 2006 by Jayanta Roy and Willem van Straten
+ *   Copyright (C) 2016 by Paul Demorest
  *   Licensed under the Academic Free License version 2.1
  *
  ***************************************************************************/
 
-// dspsr/Kernel/Formats/gmrt/dsp/GMRTUnpacker.h
+#ifndef __VDIFFourBitUnpacker_h
+#define __VDIFFourBitUnpacker_h
 
-#ifndef __GMRTUnpacker_h
-#define __GMRTUnpacker_h
-
-#include "dsp/EightBitUnpacker.h"
+#include "dsp/FourBitUnpacker.h"
 
 namespace dsp {
 
-  //! Simple 8-bit to float unpacker for the GMRT files
-  class GMRTUnpacker : public EightBitUnpacker {
+  //! Unpack 4-bit, single-pol VDIF data
+  class VDIFFourBitUnpacker : public FourBitUnpacker {
 
   public:
     
     //! Constructor
-    GMRTUnpacker (const char* name = "GMRTUnpacker");
+    VDIFFourBitUnpacker (const char* name = "VDIFFourBitUnpacker");
 
    protected:
     
@@ -32,4 +30,4 @@ namespace dsp {
 
 }
 
-#endif // !defined(__GMRTUnpacker_h)
+#endif // !defined(__VDIFEightBitUnpacker_h)
