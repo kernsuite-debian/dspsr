@@ -1,3 +1,9 @@
+dspsr (0+git20170125-1) xenial; urgency=medium
+
+  *  sync with upstream
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 31 Jan 2017 10:02:51 +0000
+
 dspsr (0+git20161021-1) xenial; urgency=medium
 
   * sync with upstream
