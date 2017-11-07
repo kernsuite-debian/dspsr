@@ -1,3 +1,10 @@
+dspsr (0+git20171107-1kern1) xenial; urgency=medium
+
+  * make debian files mit
+  * Imported Upstream version 0+git20171107
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 07 Nov 2017 18:31:14 +0200
+
 dspsr (0+git20170125-1) xenial; urgency=medium
 
   *  sync with upstream
