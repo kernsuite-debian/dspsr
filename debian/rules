@@ -1,15 +1,11 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --with autoreconf --parallel
+	dh $@ --parallel
 
 override_dh_autoreconf:
 	./bootstrap
 
 override_dh_install:
 	dh_install
-	rm debian/dspsr/usr/include/ascii_header.h
-	rm debian/dspsr/usr/include/environ.h
-	rm debian/dspsr/usr/include/debug.h
-	rm debian/dspsr/usr/include/pdev_aoHdr.h
 
