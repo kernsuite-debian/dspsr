@@ -65,6 +65,11 @@ static dsp::Unpacker::Register::Enter<dsp::CASPSRUnpacker> caspsr;
 static dsp::Unpacker::Register::Enter<dsp::SKA1Unpacker> ska1;
 #endif
 
+#if HAVE_uwb
+#include "dsp/UWBUnpacker.h"
+static dsp::Unpacker::Register::Enter<dsp::UWBUnpacker> uwb;
+#endif
+
 #if HAVE_cpsr
 #include "dsp/CPSRTwoBitCorrection.h"
 static dsp::Unpacker::Register::Enter<dsp::CPSRTwoBitCorrection> cpsr;
@@ -105,6 +110,8 @@ static dsp::Unpacker::Register::Enter<dsp::GUPPIUnpacker> guppi;
 static dsp::Unpacker::Register::Enter<dsp::GUPPIFourBit> guppi4;
 #include "dsp/GUPPITwoBitCorrection.h"
 static dsp::Unpacker::Register::Enter<dsp::GUPPITwoBitCorrection> guppi2;
+#include "dsp/GUPPITwoBitCorrectionComplex.h"
+static dsp::Unpacker::Register::Enter<dsp::GUPPITwoBitCorrectionComplex> guppi2c;
 #endif
 
 #if HAVE_kat
@@ -233,6 +240,8 @@ static dsp::Unpacker::Register::Enter<dsp::VDIFTwoBitCorrectionMulti> vdif_multi
 static dsp::Unpacker::Register::Enter<dsp::VDIFFourBitUnpacker> vdif4;
 #include "dsp/VDIFEightBitUnpacker.h"
 static dsp::Unpacker::Register::Enter<dsp::VDIFEightBitUnpacker> vdif8;
+#include "dsp/VDIFnByteUnpacker.h"
+static dsp::Unpacker::Register::Enter<dsp::VDIFEightBitUnpacker> vdifN;
 #endif
 
 #if HAVE_wapp
