@@ -1,3 +1,9 @@
+dspsr (0+git20182205-1kern1) bionic; urgency=medium
+
+  * New upstream version 0+git20182205
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 30 May 2018 12:31:51 +0000
+
 dspsr (0+git20171107-1kern1) xenial; urgency=medium
 
   * make debian files mit
