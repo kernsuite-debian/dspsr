@@ -1,11 +1,9 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --parallel
+	dh $@ --parallel --with autoreconf
 
 override_dh_autoreconf:
+	echo "data fits sigproc\n" > backends.list
 	./bootstrap
-
-override_dh_install:
-	dh_install
 
