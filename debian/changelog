@@ -1,8 +1,15 @@
+dspsr (0+git20182205-1kern1ubuntu1) UNRELEASED; urgency=medium
+
+
+ -- KERN packaging <packaging@kernsuite.info>  Mon, 20 Aug 2018 10:36:36 +0200
+
 dspsr (0+git20182205-1kern1) bionic; urgency=medium
 
+  [ Gijs Molenaar ]
   * New upstream version 0+git20182205
+  * update build rules
 
- -- KERN packaging <packaging@kernsuite.info>  Wed, 30 May 2018 12:31:51 +0000
+ -- KERN packaging <packaging@kernsuite.info>  Mon, 20 Aug 2018 10:07:10 +0200
 
 dspsr (0+git20171107-1kern1) xenial; urgency=medium
 

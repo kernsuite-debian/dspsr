@@ -1,0 +1,5 @@
+.debhelper/
+dspsr.debhelper.log
+dspsr.substvars
+dspsr/
+files
