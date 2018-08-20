@@ -136,9 +136,16 @@ void dsp::LoadToFold::construct () try
 
 #if HAVE_CFITSIO
 #if HAVE_fits
+    
     // Use callback to handle scales/offsets for read-in
-    if (manager->get_info()->get_machine() == "FITS")
+    if (config->apply_FITS_scale_and_offset &&
+	manager->get_info()->get_machine() == "FITS")
     {
+      if (config->get_total_nthread() > 1)
+	throw Error (InvalidState, "",
+		     "cannot apply FITS scales and offsets"
+		     " in multi-threaded mode");
+      
       if (Operation::verbose)
         cerr << "Using callback to read PSRFITS file." << endl;
       // connect a callback
@@ -168,7 +175,7 @@ void dsp::LoadToFold::construct () try
         }
       }
       if (not success)
-        cerr << "dspsr: WARNING: FITS input input but unable to apply scales and offsets." << endl;
+        cerr << "dspsr: WARNING: FITS input but unable to apply scales and offsets." << endl;
     }
 #endif
 #endif
@@ -549,7 +556,7 @@ void dsp::LoadToFold::construct () try
 
   operations.push_back (detect.get());
 
-  if (config->npol == 3)
+  if (config->npol == 3 || config->npol == 1)
   {
     detected = new_time_series ();
     detect->set_output (detected);
@@ -566,6 +573,11 @@ void dsp::LoadToFold::construct () try
     detected = new_time_series ();
     fourth->set_output (detected);
   }
+
+#if HAVE_CUDA
+  if (run_on_gpu)
+    detected->set_memory (device_memory);
+#endif
 
   build_fold (detected);
 
