@@ -132,3 +132,6 @@ config/xsize.m4
 config/xtrans.m4
 configure
 python/Makefile.in
+backends.list
+config.log
+

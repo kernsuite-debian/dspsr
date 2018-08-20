@@ -5,10 +5,13 @@ Maintainer: KERN packaging <packaging@kernsuite.info>
 Build-Depends:
  debhelper (>=9),
  psrchive-dev,
+ psrchive,
  liblapack-dev,
  libfftw3-dev,
  libcfitsio3-dev|libcfitsio-dev,
- dh-autoreconf
+ dh-autoreconf,
+ libgsl-dev,
+ gfortran
 Standards-Version: 4.1.4
 Homepage: http://dspsr.sourceforge.net/
 
