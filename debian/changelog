@@ -1,3 +1,13 @@
+dspsr (1.0+git20180704.a0ba17b-1) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * update build rules
+  * add watch file
+  * New upstream version 1.0+git20180704.a0ba17b
+  * cleanup
+
+ -- KERN packaging <packaging@kernsuite.info>  Mon, 20 Aug 2018 10:50:21 +0200
+
 dspsr (0+git20182205-1kern1) bionic; urgency=medium
 
   * New upstream version 0+git20182205
