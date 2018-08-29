@@ -130,6 +130,9 @@ config/wint_t.m4
 config/x11.m4
 config/xsize.m4
 config/xtrans.m4
+config/bison-i18n.m4
+config/gtk-2.0.m4
+config/libxml2.m4
 configure
 python/Makefile.in
 backends.list
