@@ -1,3 +1,10 @@
+dspsr (1.0+git20180820.af358c0-1) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * New upstream version 1.0+git20180820.af358c0
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 29 Aug 2018 20:25:32 +0200
+
 dspsr (1.0+git20180704.a0ba17b-1) bionic; urgency=medium
 
   [ Gijs Molenaar ]
