@@ -12,7 +12,11 @@ Build-Depends:
  libcfitsio3-dev|libcfitsio-dev,
  dh-autoreconf,
  libgsl-dev,
- gfortran
+ gfortran,
+ nvidia-cuda-dev,
+ nvidia-cuda-toolkit,
+# hdf5-dev,
+ libxml2-dev
 Standards-Version: 4.1.4
 Homepage: http://dspsr.sourceforge.net/
 
