@@ -1,3 +1,11 @@
+dspsr (1.0+git20181115.1d3449c-1) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * ignore debian temp files
+  * New upstream version 1.0+git20181115.1d3449c
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 28 Nov 2018 15:23:02 +0100
+
 dspsr (1.0+git20181025.32aa2b3-1) bionic; urgency=medium
 
   [ Gijs Molenaar ]
