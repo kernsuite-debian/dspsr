@@ -6,6 +6,7 @@ Build-Depends:
  debhelper (>=9),
  psrchive-dev,
  psrchive,
+ psrdada,
  liblapack-dev,
  libfftw3-dev,
  libcfitsio3-dev|libcfitsio-dev,
@@ -18,4 +19,9 @@ Homepage: http://dspsr.sourceforge.net/
 Package: dspsr
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: library for digital signal processing of pulsar astronomical timeseries
+Description: library for DSPsing of pulsar astronomical timeseries
+
+Package: dspsr-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: library for DSPing of pulsar astronomical timeseries (headers)

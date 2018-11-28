@@ -1,2 +1,8 @@
 files
+.debhelper/
+dspsr/
+*.debhelper.log
+*.substvars    
+dspsr-dev/             
+tmp/                   
 

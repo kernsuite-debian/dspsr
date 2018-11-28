@@ -4,6 +4,11 @@
 	dh $@ --parallel --with autoreconf
 
 override_dh_autoreconf:
-	echo "data fits sigproc\n" > backends.list
+	echo "apsr asp bpsr caspsr cpsr cpsr2 dada dummy emerlin fits gmrt guppi kat lbadr lbadr64 lump lwa mark4 maxim mopsr mwa pdev pmdaq puma2 s2 sigproc ska1 spda1k spigot uwb vdif\n" > backends.list
+
+	# bcpm test doesn't compile
+	#echo "data fits sigproc\n" > backends.list
 	./bootstrap
+
+
 

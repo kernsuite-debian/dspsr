@@ -137,4 +137,9 @@ configure
 python/Makefile.in
 backends.list
 config.log
+config/libcurl.m4
+config/tempo2.m4 
+config/ltargz.m4   
+config/ltdl.m4     
+Kernel/Formats/wapp/y.output 
 
