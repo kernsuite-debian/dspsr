@@ -7,8 +7,16 @@ override_dh_autoreconf:
 	echo "apsr asp bpsr caspsr cpsr cpsr2 dada dummy emerlin fits gmrt kat lbadr lbadr64 lump lwa mark4 maxim mopsr mwa pdev pmdaq puma2 s2 sigproc ska1 spda1k spigot uwb vdif\n" > backends.list
 
 	# bcpm test doesn't compile
-	#echo "data fits sigproc\n" > backends.list
 	./bootstrap
+
+override_dh_auto_configure:
+	dh_auto_configure --  \
+		--with-hdf5-incdir=/usr/include/hdf5/serial/ \
+		--with-hdf5-libdir=/usr/lib/x86_64-linux-gnu/hdf5/serial/
+
+override_dh_auto_clean:
+
+
 
 
 
