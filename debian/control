@@ -15,8 +15,9 @@ Build-Depends:
  gfortran,
  nvidia-cuda-dev,
  nvidia-cuda-toolkit,
-# hdf5-dev,
- libxml2-dev
+ libhdf5-dev,
+ libxml2-dev,
+ python-minimal
 Standards-Version: 4.1.4
 Homepage: http://dspsr.sourceforge.net/
 
