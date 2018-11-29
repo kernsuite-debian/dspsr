@@ -1,3 +1,12 @@
+dspsr (1.0+git20181115.1d3449c-3) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * add missing python dep
+  * disable auto clean
+  * enable hdf5
+
+ -- KERN packaging <packaging@kernsuite.info>  Thu, 29 Nov 2018 12:21:38 +0100
+
 dspsr (1.0+git20181115.1d3449c-2) bionic; urgency=medium
 
   * split package
